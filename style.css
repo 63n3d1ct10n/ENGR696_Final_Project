@@ -1,0 +1,206 @@
+/* --------------------------------- Navigation Bar -------------------------*/ 
+body{
+    font-family: 'Trebuchet MS', sans-serif !important;
+    margin: 0;
+    padding-top: 65px;
+    background-color: #102739;
+    color: #eee;
+}
+
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    box-shadow: -16px 6px 96px 10px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #102739;
+    border-bottom: solid 1px #E98769;
+}
+
+#navbar-container > #logo{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+#navbar-container > #navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar-container > #navbar > .nav-item{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#navbar-container > #navbar > #about-button{
+    color: #E98769;
+    border-bottom: solid 1px #E98769;
+}
+/*--------------------------------------Pages --------------------------------*/
+/* About Page */
+#about-page{
+    height: 50vh;
+}
+
+/* Skills Page */
+#skills-page{
+
+    height: 100vh;
+    display: none;
+}
+
+/* Projects Page */
+#projects-page{
+    height: 100vh;
+    display: none;
+}
+
+/* Common to all pages */
+.page{
+    padding: 22px;
+}
+
+.page > .page-content{
+   
+}
+
+/*-------------- About Page Styling ---------------*/
+#about-page > .page-content #top-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    padding: 70px;
+}
+
+#about-page > .page-content > #top-area > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-page > .page-content #chip-img{
+    box-shadow: 1px 0px 20px 0px #E98769;
+}
+
+#about-page > .page-content #summary-container{
+    border: solid 2px #E98769;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*---------------- Project Page Styling ---------------*/
+#projects-page > .page-content{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#projects-page > .page-content > div{
+    width: 60%;
+}
+
+#projects-page > .page-content > #presentation{
+    min-width: 700px;
+}
+
+#projects-page > .page-content > #presentation > #title{
+    text-align: center;
+}
+
+.info-type-a > .header {
+    background-color: #E98769;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.info-type-b > .left-cell > .header {
+    background-color: #E98769;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.info-type-b > .left-cell > .body{
+    padding: 5px;
+}
+
+.info-type-b {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid 1px #E98769;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+
+.info-type-b > .right-cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-type-b > .right-cell > div > img{
+    border-radius: 10px;
+}
+
+#view-pdf{
+    cursor: pointer;
+    border: solid 1px #E98769;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#view-pdf:hover{
+    color: lightgray;
+}
+
+
+
+/*------- Icons --------*/
+#github-icon{
+    background-color: #171515;
+    color: #eee;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkedin-icon{
+    background-color: #0077B5;
+    color: #eee;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#media-icons{
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#media-icons > a {
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
